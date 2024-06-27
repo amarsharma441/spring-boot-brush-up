@@ -14,9 +14,10 @@ import com.amar.sbrest.service.StudentService;
 @RequestMapping("api/student")
 public class StudentController {
     
-    @Autowired
+   
     IStudentService _studentService;
     
+    @Autowired
     public StudentController(StudentService _studentService) {
         this._studentService = _studentService;
     }
